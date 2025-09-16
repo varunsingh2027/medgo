@@ -1,5 +1,5 @@
-import React from 'react';
-import './GlobalPresence.css';
+import React from "react";
+import "./GlobalPresence.css";
 
 const GlobalPresence = () => {
   return (
@@ -7,9 +7,11 @@ const GlobalPresence = () => {
       <div className="container">
         <div className="section-header">
           <h2>Global Presence</h2>
-          <p className="tagline">Connecting India's Pharma Strength to the World</p>
+          <p className="bottom-tagline">
+            Connecting India's Pharma Strength to the World
+          </p>
         </div>
-        
+
         <div className="world-map-container">
           <div className="world-map">
             <div className="region-marker middle-east">
@@ -19,7 +21,7 @@ const GlobalPresence = () => {
                 <p>Supplying affordable generics & OTC products</p>
               </div>
             </div>
-            
+
             <div className="region-marker africa">
               <div className="marker-dot"></div>
               <div className="region-info">
@@ -27,7 +29,7 @@ const GlobalPresence = () => {
                 <p>Partnering in healthcare access & essential medicines</p>
               </div>
             </div>
-            
+
             <div className="region-marker latin-america">
               <div className="marker-dot"></div>
               <div className="region-info">
@@ -35,7 +37,7 @@ const GlobalPresence = () => {
                 <p>Strong network for APIs & specialty products</p>
               </div>
             </div>
-            
+
             <div className="region-marker asia">
               <div className="marker-dot"></div>
               <div className="region-info">
@@ -45,10 +47,16 @@ const GlobalPresence = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="expansion-note">
-          <p><strong>🚀 Expanding Markets:</strong> Actively building partnerships in Europe & CIS nations.</p>
-          <p className="motto">"Wherever there's a need for affordable healthcare, Medco is ready to deliver."</p>
+          <p>
+            <strong>🚀 Expanding Markets:</strong> Actively building
+            partnerships in Europe & CIS nations.
+          </p>
+          <p className="motto">
+            "Wherever there's a need for affordable healthcare, medgo is ready
+            to deliver."
+          </p>
         </div>
       </div>
     </section>

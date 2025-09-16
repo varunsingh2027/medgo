@@ -1,5 +1,5 @@
-/* About Medco Section */
-.about-medco {
+/* About medgo Section */
+.about-medgo {
   padding: 60px 0;
   background: #f8fafc;
 }
@@ -64,7 +64,7 @@
   height: 350px;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Mobile Responsiveness */
@@ -74,15 +74,15 @@
     gap: 40px;
     text-align: center;
   }
-  
+
   .about-text {
     padding-right: 0;
   }
-  
+
   .about-image {
     justify-content: center;
   }
-  
+
   .about-image img {
     width: 300px;
     height: 300px;
@@ -90,14 +90,14 @@
 }
 
 @media (max-width: 768px) {
-  .about-medco {
+  .about-medgo {
     padding: 40px 0;
   }
-  
+
   .about-text h2 {
     font-size: 1.8rem;
   }
-  
+
   .about-image img {
     width: 250px;
     height: 250px;

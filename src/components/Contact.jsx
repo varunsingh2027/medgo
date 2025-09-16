@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import './Contact.css';
+import React, { useState } from "react";
+import "./Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: "",
   });
   const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -24,13 +24,15 @@ const Contact = () => {
 
     // Validate required fields
     if (!formData.name || !formData.email || !formData.message) {
-      alert('Please fill in all required fields (Name, Email, and Message).');
+      alert("Please fill in all required fields (Name, Email, and Message).");
       setIsLoading(false);
       return;
     }
 
     // Create email content
-    const emailSubject = `Contact Form: ${formData.name} - ${formData.service || 'General Inquiry'}`;
+    const emailSubject = `Contact Form: ${formData.name} - ${
+      formData.service || "General Inquiry"
+    }`;
     const emailBody = `Hello,
 
 You have received a new message from your website contact form:
@@ -40,8 +42,8 @@ You have received a new message from your website contact form:
 CONTACT DETAILS:
 Name: ${formData.name}
 Email: ${formData.email}
-Phone: ${formData.phone || 'Not provided'}
-Service Interest: ${formData.service || 'General Inquiry'}
+Phone: ${formData.phone || "Not provided"}
+Service Interest: ${formData.service || "General Inquiry"}
 
 MESSAGE:
 ${formData.message}
@@ -55,28 +57,33 @@ Time: ${new Date().toLocaleString()}`;
 
     try {
       // Create mailto link
-      const mailtoLink = `mailto:varunsingh04.online@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-      
+      const mailtoLink = `mailto:varunsingh04.online@gmail.com?subject=${encodeURIComponent(
+        emailSubject
+      )}&body=${encodeURIComponent(emailBody)}`;
+
       // Open email client
       window.location.href = mailtoLink;
-      
+
       // Show success message
       setTimeout(() => {
-        alert('Your email client should open with the message. Please click "Send" in your email application to complete the submission.');
-        
+        alert(
+          'Your email client should open with the message. Please click "Send" in your email application to complete the submission.'
+        );
+
         // Reset form
         setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          service: '',
-          message: ''
+          name: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: "",
         });
       }, 500);
-
     } catch (error) {
-      console.error('Error opening email client:', error);
-      alert('Unable to open email client. Please manually send an email to varunsingh04.online@gmail.com with your inquiry.');
+      console.error("Error opening email client:", error);
+      alert(
+        "Unable to open email client. Please manually send an email to varunsingh04.online@gmail.com with your inquiry."
+      );
     }
 
     setIsLoading(false);
@@ -88,54 +95,62 @@ Time: ${new Date().toLocaleString()}`;
         <div className="contact-header">
           <h2>Get In Touch</h2>
           <p>
-            Ready to take the next step in your healthcare journey? 
-            Contact us today to schedule an appointment or ask any questions.
+            Ready to take the next step in your healthcare journey? Contact us
+            today to schedule an appointment or ask any questions.
           </p>
         </div>
-        
+
         <div className="contact-content">
           <div className="contact-info">
             <div className="info-card">
               <div className="info-icon">📍</div>
               <h3>Visit Us</h3>
               <p>
-                123 Medical Street<br/>
-                Healthcare District<br/>
+                123 Medical Street
+                <br />
+                Healthcare District
+                <br />
                 New Delhi - 110001
               </p>
             </div>
-            
+
             <div className="info-card">
               <div className="info-icon">📞</div>
               <h3>Call Us</h3>
               <p>
-                Main: +91-9311459973<br/>
-                Emergency: +91-9311459973<br/>
+                Main: +91-9311459973
+                <br />
+                Emergency: +91-9311459973
+                <br />
                 WhatsApp: +91-9311459973
               </p>
             </div>
-            
+
             <div className="info-card">
               <div className="info-icon">📧</div>
               <h3>Email Us</h3>
               <p>
-                varunsingh04.online@gmail.com<br/>
-                appointment@medco.com<br/>
-                emergency@medco.com
+                varunsingh04.online@gmail.com
+                <br />
+                appointment@medgo.com
+                <br />
+                emergency@medgo.com
               </p>
             </div>
-            
+
             <div className="info-card">
               <div className="info-icon">🕒</div>
               <h3>Working Hours</h3>
               <p>
-                Monday - Friday: 9:00 AM - 8:00 PM<br/>
-                Saturday: 9:00 AM - 6:00 PM<br/>
+                Monday - Friday: 9:00 AM - 8:00 PM
+                <br />
+                Saturday: 9:00 AM - 6:00 PM
+                <br />
                 Sunday: Emergency Only
               </p>
             </div>
           </div>
-          
+
           <div className="contact-form">
             <form onSubmit={handleSubmit}>
               <div className="form-group">
@@ -149,7 +164,7 @@ Time: ${new Date().toLocaleString()}`;
                   required
                 />
               </div>
-              
+
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="email">Email Address *</label>
@@ -162,7 +177,7 @@ Time: ${new Date().toLocaleString()}`;
                     required
                   />
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="phone">Phone Number</label>
                   <input
@@ -174,7 +189,7 @@ Time: ${new Date().toLocaleString()}`;
                   />
                 </div>
               </div>
-              
+
               <div className="form-group">
                 <label htmlFor="service">Service Interested In</label>
                 <select
@@ -192,7 +207,7 @@ Time: ${new Date().toLocaleString()}`;
                   <option value="pharmacy">Pharmacy Services</option>
                 </select>
               </div>
-              
+
               <div className="form-group">
                 <label htmlFor="message">Message *</label>
                 <textarea
@@ -205,21 +220,23 @@ Time: ${new Date().toLocaleString()}`;
                   required
                 ></textarea>
               </div>
-              
+
               <button type="submit" className="submit-btn" disabled={isLoading}>
-                {isLoading ? 'Opening Email...' : 'Send Message'}
+                {isLoading ? "Opening Email..." : "Send Message"}
               </button>
-              
-              <div style={{ marginTop: '15px', textAlign: 'center' }}>
-                <p style={{ fontSize: '14px', color: '#666', margin: '10px 0' }}>
-                  Having trouble with the form? 
+
+              <div style={{ marginTop: "15px", textAlign: "center" }}>
+                <p
+                  style={{ fontSize: "14px", color: "#666", margin: "10px 0" }}
+                >
+                  Having trouble with the form?
                 </p>
-                <a 
+                <a
                   href="mailto:varunsingh04.online@gmail.com?subject=Contact%20Inquiry&body=Hi,%0D%0A%0D%0APlease%20enter%20your%20message%20here.%0D%0A%0D%0AThank%20you!"
-                  style={{ 
-                    color: '#2c5aa0', 
-                    textDecoration: 'underline',
-                    fontSize: '14px'
+                  style={{
+                    color: "#2c5aa0",
+                    textDecoration: "underline",
+                    fontSize: "14px",
                   }}
                 >
                   Click here to email us directly

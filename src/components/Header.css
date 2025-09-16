@@ -851,8 +851,7 @@
     display: block;
     position: absolute;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-120%);
     background: #f8fafc;
     border: 1px solid #e2e8f0;
     border-radius: 4px;
@@ -870,7 +869,7 @@
   }
 
   .mobile-dropdown-toggle.active {
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-120%) rotate(180deg);
     background: #2c5aa0;
     color: white;
     border-color: #2c5aa0;
@@ -1880,4 +1879,10 @@
   .recently-viewed {
     display: none;
   }
+}
+
+.logoImage {
+  height: 50px;
+  width: 50px;
+  
 }

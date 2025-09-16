@@ -26,10 +26,11 @@
   font-weight: 700;
 }
 
-.tagline {
+.bottom-tagline {
   font-size: 1.3rem;
-  opacity: 0.9;
+  opacity: 1;
   font-style: italic;
+  color: aliceblue;
 }
 
 .world-map-container {
@@ -159,3 +160,4 @@
     width: 100%;
   }
 }
+
