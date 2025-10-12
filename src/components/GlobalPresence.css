@@ -1,0 +1,163 @@
+/* Global Presence Section */
+.global-presence {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.bottom-tagline {
+  font-size: 1.3rem;
+  opacity: 1;
+  font-style: italic;
+  color: aliceblue;
+}
+
+.world-map-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.world-map {
+  position: relative;
+  height: 400px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500"><defs><style>.world-outline{fill:none;stroke:rgba(255,255,255,0.3);stroke-width:1.5;}</style></defs><path class="world-outline" d="M100 200 Q200 150 300 200 T500 250 Q600 200 700 250 T900 200"/><circle cx="300" cy="180" r="8" fill="rgba(255,255,255,0.6)"/><circle cx="500" cy="220" r="8" fill="rgba(255,255,255,0.6)"/><circle cx="700" cy="190" r="8" fill="rgba(255,255,255,0.6)"/><circle cx="800" cy="240" r="8" fill="rgba(255,255,255,0.6)"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.region-marker {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.marker-dot {
+  width: 16px;
+  height: 16px;
+  background: #fbbf24;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.6);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.region-info {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1f2937;
+  padding: 15px;
+  border-radius: 8px;
+  min-width: 200px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.region-info h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.region-info p {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.middle-east {
+  top: 30%;
+  left: 40%;
+}
+
+.africa {
+  top: 60%;
+  left: 35%;
+}
+
+.latin-america {
+  top: 70%;
+  left: 15%;
+}
+
+.asia {
+  top: 40%;
+  right: 20%;
+}
+
+.expansion-note {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.expansion-note p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.motto {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #fbbf24;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .global-presence {
+    padding: 60px 0;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .world-map {
+    height: 300px;
+  }
+
+  .region-marker {
+    position: static;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .region-info {
+    min-width: auto;
+    width: 100%;
+  }
+}
+

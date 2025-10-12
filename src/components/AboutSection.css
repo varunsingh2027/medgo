@@ -1,0 +1,739 @@
+.about-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content {
+  text-align: center;
+  margin-bottom: 60px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.about-content h2 {
+  font-size: 2.2rem;
+  color: #1e40af;
+  margin-bottom: 0;
+  font-weight: 900;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  order: 1;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.highlight-india {
+  color: #14b8a6;
+  background: linear-gradient(135deg, #14b8a6, #06b6d4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.8;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: justify;
+  order: 2;
+  display: block !important;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-bottom: 80px;
+}
+
+.feature-card {
+  background: white;
+  padding: 15px 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 0.9rem;
+  color: #1e40af;
+  margin-bottom: 8px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.feature-card p {
+  color: #6b7280;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  margin-bottom: 80px;
+}
+
+.why-choose-us h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1e40af;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+
+.why-choose-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  margin-bottom: 30px;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .why-choose-row {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .why-choose-row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-choose-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.why-choose-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #2563eb;
+}
+
+.why-choose-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.why-choose-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.why-choose-card h3 {
+  font-size: 1.3rem;
+  color: #1e40af;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.why-choose-card p {
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Brands Section */
+.brands-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1e40af;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.brand-card {
+  background: white;
+  padding: 15px 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-color: #2563eb;
+}
+
+.brand-card span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .about-section {
+    padding: 70px 15px;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-section {
+    padding: 60px 15px;
+  }
+  
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .about-description {
+    font-size: 0.95rem;
+    max-width: 800px;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  
+  .feature-card {
+    min-height: 180px;
+    padding: 20px 15px;
+  }
+  
+  .feature-icon {
+    font-size: 1.8rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.8rem;
+  }
+  
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .brands-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 775px) {
+  .about-content h2 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    white-space: normal !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+    gap: 0.3em !important; /* Reduced from 0.4em for better mobile spacing */
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+  
+  /* Make individual words/parts of the heading wrap naturally */
+  .about-content h2 span {
+    flex-shrink: 0;
+    display: inline-block;
+  }
+  
+  /* Special styling for INDIA to maintain highlight */
+  .about-content h2 .highlight-india {
+    color: #059669;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-content h2 {
+    font-size: 1.3rem !important;
+    gap: 0.25em !important; /* Further reduced gap for small screens */
+    line-height: 1.3 !important;
+    letter-spacing: 0.3px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h2 {
+    font-size: 1.1rem !important;
+    gap: 0.2em !important; /* Minimal gap for mobile phones */
+    line-height: 1.2 !important;
+    letter-spacing: 0.2px !important;
+    padding: 0 10px !important; /* Add padding for better mobile appearance */
+  }
+}
+
+@media (max-width: 360px) {
+  .about-content h2 {
+    font-size: 1rem !important;
+    gap: 0.15em !important; /* Very tight spacing for extra small screens */
+    letter-spacing: 0.1px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 50px 15px;
+  }
+  
+  .about-content h2 {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    /* Removed white-space: nowrap, overflow: hidden, text-overflow: ellipsis to maintain flex wrapping */
+    /* Keep the flex display and wrapping from 775px breakpoint */
+  }
+  
+  .about-description {
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  /* Features in 2 columns for tablet */
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+  
+  .feature-card {
+    min-height: 180px;
+    padding: 12px 8px;
+  }
+  
+  .feature-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .feature-card h3 {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+  
+  .feature-card p {
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
+  
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .brand-card {
+    min-height: 50px;
+    padding: 10px 8px;
+  }
+  
+  .brand-card span {
+    font-size: 0.8rem;
+  }
+  
+  .why-choose-us h2,
+  .brands-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 650px) {
+  /* Features Grid: 2 columns for small tablets */
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 50px;
+  }
+  
+  .feature-card {
+    min-height: 170px;
+    padding: 12px 10px;
+  }
+  
+  .feature-icon {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+  
+  .feature-card h3 {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+  
+  .feature-card p {
+    font-size: 0.72rem;
+    line-height: 1.3;
+  }
+  
+  /* Why Choose Us: 2 columns for small tablets */
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .why-choose-card {
+    padding: 25px 20px;
+  }
+  
+  .why-choose-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .why-choose-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  
+  .why-choose-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+  }
+  
+  /* Brands Section: 3 columns for small tablets */
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 600px;
+  }
+  
+  .brand-card {
+    min-height: 55px;
+    padding: 12px 10px;
+    border-radius: 10px;
+  }
+  
+  .brand-card span {
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+  
+  .brands-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 40px 10px;
+  }
+  
+  .about-content {
+    gap: 20px;
+  }
+  
+  .about-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  /* Features Grid: Single column for mobile phones */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 15px; /* Increased gap for better mobile spacing */
+    margin-bottom: 40px;
+  }
+  
+  .feature-card {
+    min-height: 140px; /* Reduced height for mobile */
+    padding: 20px 15px; /* Better touch targets */
+    border-radius: 12px; /* Slightly more rounded for mobile */
+  }
+  
+  .feature-icon {
+    font-size: 1.8rem; /* Larger icons for mobile */
+    margin-bottom: 10px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1rem; /* Better readability on mobile */
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  
+  .feature-card p {
+    font-size: 0.85rem; /* Improved mobile text size */
+    line-height: 1.4;
+    color: #4b5563; /* Slightly darker for better readability */
+  }
+  
+  /* Why Choose Us: Single column for mobile phones */
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .why-choose-card {
+    padding: 25px 18px; /* Better mobile padding */
+    border-radius: 12px; /* More rounded for mobile */
+  }
+  
+  .why-choose-icon {
+    font-size: 2.2rem; /* Larger icons for mobile visibility */
+    margin-bottom: 15px;
+  }
+  
+  .why-choose-card h3 {
+    font-size: 1.2rem; /* Better mobile readability */
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  
+  .why-choose-card p {
+    font-size: 0.95rem; /* Improved mobile text size */
+    line-height: 1.5;
+    color: #4b5563; /* Better contrast for mobile */
+  }
+  
+  .why-choose-us h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Brands Section */
+  .brands-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Brands Grid: 2 columns for mobile phones */
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; /* Increased gap for better mobile spacing */
+    max-width: 400px;
+  }
+  
+  .brand-card {
+    min-height: 60px; /* Better mobile touch targets */
+    padding: 15px 12px;
+    border-radius: 12px; /* More rounded for mobile */
+  }
+  
+  .brand-card span {
+    font-size: 0.9rem; /* Better mobile readability */
+    font-weight: 600;
+    line-height: 1.3;
+  }
+}
+  
+  .why-choose-card {
+    padding: 25px 15px;
+  }
+  
+  .why-choose-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .why-choose-card p {
+    font-size: 0.9rem;
+  }
+  
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .brand-card {
+    min-height: 45px;
+    padding: 8px 6px;
+  }
+  
+  .brand-card span {
+    font-size: 0.7rem;
+  }
+  
+  .why-choose-us h2,
+  .brands-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+
+@media (max-width: 360px) {
+  /* Extra small mobile phones - Features Grid */
+  .features-grid {
+    gap: 12px;
+    margin-bottom: 35px;
+  }
+  
+  .feature-card {
+    min-height: 130px;
+    padding: 18px 12px;
+  }
+  
+  .feature-icon {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+  
+  .feature-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  
+  .feature-card p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+  
+  /* Extra small mobile phones - Why Choose Us */
+  .why-choose-card {
+    padding: 20px 15px;
+  }
+  
+  .why-choose-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+  
+  .why-choose-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .why-choose-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+  
+  /* Extra small mobile phones - Brands Section */
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 350px;
+  }
+  
+  .brand-card {
+    min-height: 55px;
+    padding: 12px 10px;
+  }
+  
+  .brand-card span {
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+  
+  .brands-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Very small phones - Single column brands */
+  .brands-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 280px;
+  }
+  
+  .brand-card {
+    min-height: 50px;
+    padding: 15px 10px;
+  }
+  
+  .brand-card span {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .brands-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}
