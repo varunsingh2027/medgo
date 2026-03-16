@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import leadershipImg from "../assets/about-leadership.svg";
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
           </div>
           <div className="about-image">
             <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face"
+              src={leadershipImg}
               alt="medgo Leadership"
             />
           </div>

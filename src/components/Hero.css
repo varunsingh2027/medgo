@@ -124,7 +124,7 @@
 .hero {
   background: 
     linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(59, 130, 246, 0.1) 50%, rgba(147, 197, 253, 0.1) 100%),
-    url('https://images.unsplash.com/photo-1584362917165-526a968579e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&h=600&q=80');
+    url('../assets/hero-bg.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
